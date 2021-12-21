@@ -52,7 +52,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
 
         /// <summary>
         /// List all the available operations the KubernetesConfiguration resource
-        /// provider supports.
+        /// provider supports, in this api-version.
         /// </summary>
         /// <param name='customHeaders'>
         /// Headers that will be added to request.
@@ -221,7 +221,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
 
         /// <summary>
         /// List all the available operations the KubernetesConfiguration resource
-        /// provider supports.
+        /// provider supports, in this api-version.
         /// </summary>
         /// <param name='nextPageLink'>
         /// The NextLink from the previous successful call to List operation.

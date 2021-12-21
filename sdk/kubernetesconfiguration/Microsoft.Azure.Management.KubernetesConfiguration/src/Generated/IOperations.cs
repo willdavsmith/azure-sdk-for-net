@@ -25,7 +25,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
     {
         /// <summary>
         /// List all the available operations the KubernetesConfiguration
-        /// resource provider supports.
+        /// resource provider supports, in this api-version.
         /// </summary>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -45,7 +45,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
         Task<AzureOperationResponse<IPage<ResourceProviderOperation>>> ListWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List all the available operations the KubernetesConfiguration
-        /// resource provider supports.
+        /// resource provider supports, in this api-version.
         /// </summary>
         /// <param name='nextPageLink'>
         /// The NextLink from the previous successful call to List operation.

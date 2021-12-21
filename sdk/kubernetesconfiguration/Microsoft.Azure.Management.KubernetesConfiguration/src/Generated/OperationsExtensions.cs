@@ -23,7 +23,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
     {
             /// <summary>
             /// List all the available operations the KubernetesConfiguration resource
-            /// provider supports.
+            /// provider supports, in this api-version.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -35,7 +35,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
 
             /// <summary>
             /// List all the available operations the KubernetesConfiguration resource
-            /// provider supports.
+            /// provider supports, in this api-version.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -53,7 +53,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
 
             /// <summary>
             /// List all the available operations the KubernetesConfiguration resource
-            /// provider supports.
+            /// provider supports, in this api-version.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -68,7 +68,7 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration
 
             /// <summary>
             /// List all the available operations the KubernetesConfiguration resource
-            /// provider supports.
+            /// provider supports, in this api-version.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.

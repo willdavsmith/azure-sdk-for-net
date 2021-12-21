@@ -12,12 +12,15 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration.Models
 {
 
     /// <summary>
-    /// Defines values for InstallStateType.
+    /// Defines values for ProvisioningState.
     /// </summary>
-    public static class InstallStateType
+    public static class ProvisioningState
     {
-        public const string Pending = "Pending";
-        public const string Installed = "Installed";
+        public const string Succeeded = "Succeeded";
         public const string Failed = "Failed";
+        public const string Canceled = "Canceled";
+        public const string Creating = "Creating";
+        public const string Updating = "Updating";
+        public const string Deleting = "Deleting";
     }
 }

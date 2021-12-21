@@ -14,28 +14,27 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration.Models
     using System.Linq;
 
     /// <summary>
-    /// Error definition.
+    /// The resource management error additional info.
     /// </summary>
-    public partial class ErrorDefinition
+    public partial class ErrorAdditionalInfo
     {
         /// <summary>
-        /// Initializes a new instance of the ErrorDefinition class.
+        /// Initializes a new instance of the ErrorAdditionalInfo class.
         /// </summary>
-        public ErrorDefinition()
+        public ErrorAdditionalInfo()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the ErrorDefinition class.
+        /// Initializes a new instance of the ErrorAdditionalInfo class.
         /// </summary>
-        /// <param name="code">Service specific error code which serves as the
-        /// substatus for the HTTP error code.</param>
-        /// <param name="message">Description of the error.</param>
-        public ErrorDefinition(string code, string message)
+        /// <param name="type">The additional info type.</param>
+        /// <param name="info">The additional info.</param>
+        public ErrorAdditionalInfo(string type = default(string), object info = default(object))
         {
-            Code = code;
-            Message = message;
+            Type = type;
+            Info = info;
             CustomInit();
         }
 
@@ -45,17 +44,16 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration.Models
         partial void CustomInit();
 
         /// <summary>
-        /// Gets or sets service specific error code which serves as the
-        /// substatus for the HTTP error code.
+        /// Gets the additional info type.
         /// </summary>
-        [JsonProperty(PropertyName = "code")]
-        public string Code { get; set; }
+        [JsonProperty(PropertyName = "type")]
+        public string Type { get; private set; }
 
         /// <summary>
-        /// Gets or sets description of the error.
+        /// Gets the additional info.
         /// </summary>
-        [JsonProperty(PropertyName = "message")]
-        public string Message { get; set; }
+        [JsonProperty(PropertyName = "info")]
+        public object Info { get; private set; }
 
     }
 }

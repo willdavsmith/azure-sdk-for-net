@@ -12,11 +12,13 @@ namespace Microsoft.Azure.Management.KubernetesConfiguration.Models
 {
 
     /// <summary>
-    /// Defines values for OperatorScopeType.
+    /// Defines values for CreatedByType.
     /// </summary>
-    public static class OperatorScopeType
+    public static class CreatedByType
     {
-        public const string Cluster = "cluster";
-        public const string Namespace = "namespace";
+        public const string User = "User";
+        public const string Application = "Application";
+        public const string ManagedIdentity = "ManagedIdentity";
+        public const string Key = "Key";
     }
 }
